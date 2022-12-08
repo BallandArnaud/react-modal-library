@@ -1,0 +1,43 @@
+.customModal .reactModalLib__container {
+  color: #FFF;
+  background-color: #c1121f;
+  max-width: 50%;
+  max-height: 500px;
+  padding: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  overflow-y: initial !important;
+}
+
+.customModal .reactModalLib__btnClose {
+  background-color: #3b3b3b;
+}
+
+.customModal .reactModalLib__btnClose:hover {
+  background-color: #000;
+}
+
+.customModal .reactModalLib__content{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.customModal__header {
+  background-color: #780000;
+  padding: 10px;
+  border-top-left-radius: 5px;
+}
+
+.customModal__header h2{
+  margin: 0;
+}
+
+.customModal__body{
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.customModal .reactModalLib__content p{
+  margin: 0;
+  padding: 15px;
+  border-radius: 5px;
+}
