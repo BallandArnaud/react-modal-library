@@ -6,11 +6,11 @@ import './styles.css'
 const stories = storiesOf('Modal Test', module)
 
 stories.add('Default Modal', () => {
-  const [modalIsOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <>
       <button onClick={() => setIsModalOpen(true)}>Open modal</button>
-      <Modal isOpen={modalIsOpen} setIsModalOpen={setIsModalOpen}>
+      <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
         <h2>Modal test</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et
@@ -30,13 +30,13 @@ stories.add('Default Modal', () => {
 })
 
 stories.add('Custom Modal', () => {
-  const [modalIsOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <>
       <button onClick={() => setIsModalOpen(true)}>Open modal</button>
       <Modal
         className="customModal"
-        isOpen={modalIsOpen}
+        isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
       >
         <div className="customModal__header">

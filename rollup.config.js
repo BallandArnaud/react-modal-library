@@ -11,11 +11,13 @@ export default [
       {
         file: 'dist/index.js',
         format: 'cjs',
+        sourcemap: true,
       },
       {
         file: 'dist/index.es.js',
         format: 'es',
         exports: 'named',
+        sourcemap: true,
       },
     ],
     plugins: [
@@ -31,5 +33,6 @@ export default [
       resolve(),
       terser(),
     ],
+    external: ['prop-types'],
   },
 ]

@@ -1,8 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './modal.css'
 
-export const Modal = ({ className = '', isOpen, setIsModalOpen, children }) => {
-  if (!isOpen) return null
+export const Modal = ({
+  className = '',
+  isModalOpen,
+  setIsModalOpen,
+  children,
+}) => {
+  if (!isModalOpen) return null
 
   const closeModal = (e) => {
     e.preventDefault()
@@ -38,4 +44,11 @@ export const Modal = ({ className = '', isOpen, setIsModalOpen, children }) => {
       </div>
     </div>
   )
+}
+
+Modal.propTypes = {
+  className: PropTypes.string,
+  isModalOpen: PropTypes.bool.isRequired,
+  setIsModalOpen: PropTypes.func.isRequired,
+  children: PropTypes.array,
 }
